@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="heart"></canvas>
+
+    <audio id="myAudio" autoplay>
+        <source src="audio/audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="main.js"></script>
+    <script>
+        // Lấy thẻ audio
+        const audio = document.getElementById('myAudio');
+
+        // Đảm bảo trình duyệt hỗ trợ phát audio tự động
+        if (audio.autoplay) {
+        // Bắt đầu phát nhạc khi trang web được tải
+        audio.play();
+        }
+    </script>
+</body>
+</html>
